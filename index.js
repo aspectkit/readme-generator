@@ -1,15 +1,16 @@
+// required packages
 const fs = require('fs');
 const inquirer = require('inquirer');
 const gm = require('./generateMarkdown')
 
-
+// writes all the data to a file given the readme format in generateMarkdown.js
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
         err ? console.log(err) : console.log('Success!')
     );
 }
 
-
+// init function that prompts user for information
 function init() {
     inquirer
     .prompt([
