@@ -34,7 +34,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
     if (license != "None"){
-        return `The application is covered under the ${license} License.`;
+        return `The application is covered under the [${license}](${renderLicenseLink(license)}) License.`;
     } else {
         return "";
     }
@@ -46,9 +46,9 @@ function generateMarkdown(data) {
     return `# ${data.title}
 
 ## License
-${renderLicenseBadge(data.license)}
-${renderLicenseSection(data.license)}
-[${data.license}](${renderLicenseLink(data.license)})  
+${renderLicenseBadge(data.license)}\
+${renderLicenseSection(data.license)}\ 
+
 
 
 ## Table of Contents
@@ -77,7 +77,7 @@ ${data.contribution}
 ${data.test}
 
 ## Questions
-${data.github}
+${data.github}\
 ${data.email}`;
 }
 
