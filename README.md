@@ -13,6 +13,7 @@ The application is covered under the [MIT](https://github.com/kitdhing/readme-ge
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Video](#video)
 
 
 ## Description
@@ -33,3 +34,6 @@ N/A
 ## Questions
 [github](https://github.com/kitdhing)\
 [email](dhinkit@gmail.com)
+
+## Video
+![Demo Video](assets/demo.gif)
