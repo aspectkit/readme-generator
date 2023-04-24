@@ -47,7 +47,7 @@ function generateMarkdown(data) {
 
 ## License 
 ${renderLicenseBadge(data.license)}\\
-${renderLicenseSection(data.license)}\\ 
+${renderLicenseSection(data.license)} 
 
 
 
